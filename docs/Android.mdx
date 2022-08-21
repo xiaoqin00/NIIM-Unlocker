@@ -7,22 +7,32 @@ sidebar_position: 2
 请在**系统自带浏览器**中访问此网页。
 
 ## 安装证书
+两个证书**任选其一**安装即可，优先选择CER证书。
 
 <div>
-  <button
-    className="button button--primary button--lg"
-    onClick={() => {
-      window.open('https://v.iloveu.top/FiddlerRoot.cer', "_blank");
-    }}
-  >
-    <Translate>点此安装</Translate>
-  </button>
-  <br />
+    <button className="button button--primary button--lg" onClick={()=> {
+        window.open('https://v.iloveu.top/FiddlerRoot.cer', "_blank");
+        }}
+        >
+        <Translate>下载CER证书</Translate>
+    </button>
+    <br />
+</div>
+
+<br />
+<div>
+    <button className="button button--primary button--lg" onClick={()=> {
+        window.open('https://v.iloveu.top/FiddlerRoot.crt', "_blank");
+        }}
+        >
+        <Translate>下载CRT证书</Translate>
+    </button>
+    <br />
 </div>
 
 ### 方法一
 
-直接打开下载好的文件，选择“证书安装程序”，选择 **VPN 证书**，为证书输入一个名称，点按**确定**。
+直接打开下载好的证书文件，选择“证书安装程序”，选择 **VPN 证书**，为证书输入一个名称，点按**确定**。
 
 ### 方法二
 
@@ -53,6 +63,7 @@ sidebar_position: 2
   <br />
 </div>
 
+
 ### 导入配置文件
 
 <div>
@@ -77,6 +88,8 @@ sidebar_position: 2
 
 ## 最后一步
 
-打开云打印APP，查看会员到期时间，若显示2099-12-31则为解锁成功，连接打印机，测试效果。
+打开云打印APP，若显示**"欢迎使用云打印解锁版"**，代表上述步骤操作成功。
 
-Tips：若解锁不成功，请尝试清除云打印APP数据后重新打开。
+连接设备后，点击右下角“我的”，将**用户UID**和**设备ID**复制给工作人员，后台授权后即可解锁成功。
+
+![](https://img01-xusong.91q.com/5AE66249-231F-424E-B765-6D7E89BE2F8B.jpg)
