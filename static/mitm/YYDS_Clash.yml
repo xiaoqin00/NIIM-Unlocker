@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+proxies:
+  - name: YYDS
+    server: gz.ruyenet.com
+    port: 6666
+    type: vmess
+    uuid: 29692A0F-7148-A81F-7B05-7B3BE6FB3DF2
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: a.189.cn
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - YYDS
+rules:
+  - DOMAIN-SUFFIX,print.niimbot.com,🚀 节点选择
+  - DOMAIN-SUFFIX,cxy.niimbot.com,🚀 节点选择
+  - GEOIP,CN,DIRECT
+  - MATCH,DIRECT
+proxy-providers: {}
+rule-providers: {}
