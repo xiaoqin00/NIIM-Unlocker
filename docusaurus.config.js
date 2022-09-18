@@ -10,7 +10,7 @@ const config = {
   scripts: [
   ],
   tagline: 'A tool that can unblock NIIMBOT.',
-  url: "https://niim.iloveu.top",
+  url: "https://niim.ruyenet.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
