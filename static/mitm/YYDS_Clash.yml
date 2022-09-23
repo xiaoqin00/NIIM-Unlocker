@@ -27,6 +27,7 @@ proxy-groups:
 rules:
   - DOMAIN-SUFFIX,print.niimbot.com,🚀 节点选择
   - DOMAIN-SUFFIX,cxy.niimbot.com,🚀 节点选择
+  - DOMAIN-SUFFIX,vv6.video.qq.com,🚀 节点选择
   - GEOIP,CN,DIRECT
   - MATCH,DIRECT
 proxy-providers: {}
