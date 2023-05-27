@@ -1,0 +1,70 @@
+---
+sidebar_position: 6
+---
+
+#  Win
+
+
+## 安装证书
+
+
+
+<br />
+
+<div>
+    <button className="button button--primary button--lg" onClick={()=> {
+        window.open('https://niim.ruyenet.com/mitm/FiddlerRoot.crt', "_blank");
+        }}
+        >
+        <Translate>下载CRT证书</Translate>
+    </button>
+    <br />
+</div>
+
+
+## 安装Clash
+
+### 下载安装程序
+
+<div>
+  <button
+    className="button button--primary button--lg"
+    onClick={() => {
+      window.open('https://pan.ruyenet.com/tmp/Clash.for.Windows.Setup.0.20.24.exe', "_blank");
+    }}
+  >
+    <Translate>高速下载</Translate>
+  </button>
+  <br />
+</div>
+
+<br />
+
+<div>
+  <button
+    className="button button--primary button--lg"
+    onClick={() => {
+      window.open('https://ghproxy.com/https://github.com/Fndroid/clash_for_windows_pkg/releases/download/0.20.24/Clash.for.Windows.Setup.0.20.24.exe', "_blank");
+    }}
+  >
+    <Translate>普通下载</Translate>
+  </button>
+  <br />
+</div>
+
+<br />
+
+
+### 导入配置文件
+
+<div>
+  <button
+    className="button button--primary button--lg"
+    onClick={() => {
+      window.open('clash://install-config?url=https%3A%2F%2Fniim.ruyenet.com%2Fmitm%2FYYDS_Clash.yml', "_blank");
+    }}
+  >
+    <Translate>导入Clash</Translate>
+  </button>
+  <br />
+</div>
